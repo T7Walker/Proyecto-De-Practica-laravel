@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->varchar(50)->Nombre;
             $table->varchar(50)->Empresa;
+            
             $table->timestamps();
         });
     }

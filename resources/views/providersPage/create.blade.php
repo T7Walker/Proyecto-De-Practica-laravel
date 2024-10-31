@@ -7,7 +7,7 @@
 </head>
 <body>
 
-    <form action="{{route('provider.store')}}" method="POST" enctype="multipart/form-data">
+    <form action="{{route('provider.show')}}" method="POST" enctype="multipart/form-data">
 
         @csrf
 
@@ -22,7 +22,7 @@
             Empresa:
         </label>
             <br>
-            <input type="text" name="description">
+            <input type="text" name="Company">
 
             <br>
 
