@@ -13,8 +13,8 @@ return new class extends Migration
     {
         Schema::create('tags', function (Blueprint $table) {
             $table->id();
-            $table->varchar(45)->name;
-            $table->varchar(45)->slug;
+            $table->string('name')->name;
+            $table->string('slug')->slug;
         });
     }
 

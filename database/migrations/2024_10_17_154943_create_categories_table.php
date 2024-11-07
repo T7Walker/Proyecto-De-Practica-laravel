@@ -13,8 +13,8 @@ return new class extends Migration
     {
         Schema::create('categories', function (Blueprint $table) {
             $table->id();
-            $table->varchar(45)->name;
-            $table->varchar(45)->slug;
+            $table->string('Name')->Name;
+            $table->string('Slug')->Slug;
         
         });
     }

@@ -13,9 +13,9 @@ return new class extends Migration
     {
         Schema::create('images', function (Blueprint $table) {
             $table->id();
-            $table->varchar(200)->url;
-            $table->varchar(45)->imageable_id;
-            $table->varchar(45)->imageable_type;
+            $table->string('url')->url;
+            $table->string('urlOfImg')->imageable_id;
+            $table->string('typeOfTheImg')->imageable_type;
 
         });
     }

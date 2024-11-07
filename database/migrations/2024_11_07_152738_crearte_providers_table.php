@@ -9,16 +9,17 @@ return new class extends Migration
     /**
      * Run the migrations.
      */
-    public function up(): void
+    public function up()
     {
+        Schema::dropIfExists('providers'); // Elimina la tabla si existe
         Schema::create('providers', function (Blueprint $table) {
             $table->id();
-            $table->varchar(50)->Nombre;
-            $table->varchar(50)->Empresa;
-            
+            $table->string('name');
+            $table->string('Company');
             $table->timestamps();
         });
     }
+    
 
     /**
      * Reverse the migrations.

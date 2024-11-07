@@ -7,28 +7,17 @@
 </head>
 <body>
 
-    <form action="{{route('provider.show')}}" method="POST" enctype="multipart/form-data">
-
-        @csrf
-
-        <label>
-            Nombre:
-        </label>
-            <br>
-            <input type="text" name="name">
-
-        <br>
-        <label>
-            Empresa:
-        </label>
-            <br>
-            <input type="text" name="Company">
-
-            <br>
-
-        <br><br>
-        <button type="submit">Enviar Formulario:</button>
-        </form>
+<form action="{{ route('providersPage.store') }}" method="POST" enctype="multipart/form-data">
+    @csrf
+    <label>Nombre:</label>
+    <input type="text" name="name">
+    <br>
+    <label>Empresa:</label>
+    <input type="text" name="Company">
+    <br><br>
+    <button type="submit">Enviar Formulario</button>
+    
+</form>
 
 </body>
 </html>

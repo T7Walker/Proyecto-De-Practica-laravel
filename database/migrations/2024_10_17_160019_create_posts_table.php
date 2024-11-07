@@ -13,14 +13,13 @@ return new class extends Migration
     {
         Schema::create('posts', function (Blueprint $table) {
             $table->id();
-            $table->varchar(45)->name;
-            $table->varchar(45)->slug;
-            $table->varchar(45)->extrac;
-            $table->varchar(45)->body;
-            $table->varchar(45)->body;
-            $table->varchar(45)->stats;
-            $table->int()->category_id;
-            $table->int()->user_id;
+            $table->string('name')->name;
+            $table->string('slug')->slug;
+            $table->string('extrac')->extrac;
+            $table->string('body')->body;
+            $table->string('stats')->stats;
+            $table->integer('categoryFK')->category_id;
+            $table->integer('userFK')->user_id;
 
 
         });

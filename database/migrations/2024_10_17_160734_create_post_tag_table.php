@@ -13,8 +13,8 @@ return new class extends Migration
     {
         Schema::create('post_tag', function (Blueprint $table) {
             $table->id();
-            $table->int()->post_id;
-            $table->int()->tag_id;
+            $table->integer('postFK')->post_id;
+            $table->integer('tagFK')->tag_id;
             
         });
     }
